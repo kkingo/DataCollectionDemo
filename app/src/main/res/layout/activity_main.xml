@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+            <TextView
+                android:id="@+id/text_step"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="当前步数:"
+                android:textColor="@color/ghostwhite" />
+
+            <EditText
+                android:id="@+id/text_showstep"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="0"
+                />
+
+            <TextView
+                android:id="@+id/text_orient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="当前方向:"
+                android:textColor="@color/ghostwhite" />
+
+            <EditText
+                android:id="@+id/text_showorient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+        </TableRow>
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="16dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_step"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@color/black"-->
+<!--                android:gravity="center"-->
+<!--                android:text="当前步数"-->
+<!--                android:textColor="@color/ghostwhite" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_showstep"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="0" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_orient"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@color/black"-->
+<!--                android:gravity="center"-->
+<!--                android:text="当前方向"-->
+<!--                android:textColor="@color/ghostwhite" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_showorient"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="0" />-->
+<!--        </TableRow>-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="参考点横坐标:"
+                android:textColor="@color/ghostwhite" />
+
+            <EditText
+                android:id="@+id/edit_RPX"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="点击输入"
+                android:inputType="number" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="参考点纵坐标:"
+                android:textColor="@color/ghostwhite" />
+
+            <EditText
+                android:id="@+id/edit_PRY"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="点击输入"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="采集次数:"
+                android:textColor="@color/ghostwhite"/>
+            <LinearLayout
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/edit_CTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:hint="点击输入"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="次"
+                    android:textColor="@color/ghostwhite"/>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="开始" />
+
+
+
+</LinearLayout>
